@@ -1,0 +1,24 @@
+footer {
+  height: 173px;
+  background-color: #120e19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    li {
+      color: #fff;
+      font-size: 14px;
+      margin: 0 15px 20px;
+    }
+  }
+}
+
+.footer-copy {
+  color: #A798B7;
+  font-size: 10px;
+}

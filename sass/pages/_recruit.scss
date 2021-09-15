@@ -1,0 +1,146 @@
+.recruit-guide {
+  margin-bottom: 0;
+}
+
+.recruit-wrapper {
+  background-image: url(../img/bg-geometry.png);
+  background-repeat: repeat;
+}
+
+.recruit-concept {
+  max-width: 1440px;
+  height: 500px;
+  padding: 130px 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  @include mobile {
+    padding-top: 50px;
+    height: 400px;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: bold;
+    color: #391e88;
+    line-height: 1;
+    margin-bottom: 15px;
+    @include mobile {
+      font-size: 48px;
+    }
+  }
+  &__translation {
+    color: #391e88;
+    font-size: 32px;
+    margin-bottom: 30px;
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  &__text {
+    font-size: 15px;
+    color: #333;
+  }
+}
+
+.recruit-visual {
+  background-image: url(../img/recruit01.jpg);
+  background-position: center 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 780px;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+.recruit-job {
+  max-width: 1110px;
+  margin: 0 auto 140px;
+  padding: 0 15px;
+  text-align: center;
+  @include mobile {
+    margin-bottom: 80px;
+  }
+
+  &__container {
+    border: 1px solid #B8AED5;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 60px 95px;
+    @include mobile {
+      padding: 30px 60px;
+    }
+  }
+
+  &__occupation {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    width: 100%;
+    margin-bottom: 50px;
+
+    tr {
+      border-bottom: 1px solid #707070;
+      }
+
+    th {
+      width: 20%;
+      padding: 31px 0 31px 20px;
+      @include mobile {
+        width: 100%;
+        display: block;
+        padding: 20px 0 15px;
+      }
+    }
+
+    td {
+      padding: 31px 0;
+      @include mobile {
+        width: 100%;
+        display: block;
+        padding: 0 0 20px;
+      }
+
+      ul {
+        margin-top: 20px;
+      }
+
+      li {
+        list-style-type: disc;
+        list-style-position: inside;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+.contact__link--text {
+  margin-top: 10px;
+}
+
+.recruit-movie {
+  text-align: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px 110px;
+  @include mobile {
+    padding-bottom: 80px;
+  }
+  &__youtube {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.top-guide-com {
+  margin-bottom: 0;
+}
+
+.company-sub {
+  height: auto;
+}
+
+.company-container {
+  height: 481px;
+}
+
+.company__ceo {
+  max-width: 1100px;
+  margin: 0 auto 140px;
+  padding: 0 15px;
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &--img {
+    flex: 1 1 40%;
+    margin-right: 50px;
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &--text {
+    flex: 1 1 60%;
+    font-size: 15px;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+.company-overview {
+  max-width: 1110px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+  text-align: center;
+
+  &__detail {
+    text-align: left;
+
+    dl {
+      height: 80px;
+      border-bottom: 1px solid #dddddd;
+      display: flex;
+      align-items: center;
+      @include mobile {
+        height: 88px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+
+    dt {
+      padding-left: 25px;
+      width: 200px;
+      font-size: 15px;
+      @include mobile {
+        padding-left: 0;
+      }
+    }
+    dd {
+      font-size: 15px;
+      font-weight: normal;
+    }
+  }
+}
+
+.gmap {
+  max-width: 1110px;
+  margin: 0 auto 110px;
+  padding: 0 15px;
+  @include mobile {
+    margin-bottom: 50px;
+  }
+  &__map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__link {
+    font-size: 16px;
+    color: #240C6A;
+  }
+}

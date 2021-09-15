@@ -1,0 +1,111 @@
+.contact-wrapper {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 70px 0 40px;
+  @include mobile {
+    font-size: 14px;
+    margin: 40px 0 30px;
+  }
+}
+
+.form-container {
+  background-color: #F7F7F7;
+  padding: 90px;
+  @include mobile {
+    padding: 30px;
+  }
+}
+
+.form {
+  &__item {
+    margin-bottom: 30px;
+
+    label {
+    margin-right: 35px;
+    }
+
+    .required {
+      font-size: 12px;
+      color: #391E88;
+      margin-left: 10px;
+    }
+
+    #name, #com, #mail, select {
+      border: 1px solid #aaaaaa;
+      background-color: #fff;
+      border-radius: 6px;
+      width: 300px;
+      padding: 12px;
+      &:focus {
+        border: 1px solid orange;
+        z-index: 10;
+        outline: 0;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    #tel {
+      border: 1px solid #aaaaaa;
+      background-color: #fff;
+      border-radius: 6px;
+      width: 200px;
+      padding: 12px;
+      &:focus {
+        border: 1px solid orange;
+        z-index: 10;
+        outline: 0;
+      
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    textarea {
+      border: 1px solid #aaaaaa;
+      background-color: #fff;
+      border-radius: 6px;
+      width: 601px;
+      height: 255px;
+      padding: 12px;
+      &:focus {
+        border: 1px solid orange;
+        z-index: 10;
+        outline: 0;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: block;
+  }
+}
+
+.not-bold {
+  font-weight: normal;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.contact__btn {
+  text-align: center;
+}
+
+.radio-item {
+  @include mobile {
+    display: block;
+    font-size: 13px;
+  }
+}

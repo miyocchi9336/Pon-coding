@@ -1,0 +1,308 @@
+/* メインビジュアル */
+.main-visual {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 70px;
+  height: 768px;
+  @include mobile {
+    height: 812px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    text-align: center;
+    @include mobile {
+      text-align: left;
+      padding-left: 50px;
+    }
+
+    .main-visual__title {
+      margin-bottom: 50px;
+
+      &--main {
+        font-size: 72px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 25px;
+        @include mobile {
+          font-size: 48px;
+          line-height: 1.5;
+        }
+      }
+      &--sub {
+        font-size: 24px;
+        line-height: 1;
+        @include mobile {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.scroll {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  padding: 10px 10px 90px;
+  writing-mode: vertical-lr;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 80px;
+    content: "";
+    background: #fff;
+  }
+}
+
+/* ニュース */
+.news {
+  max-width: 917px;
+  height: auto;
+  display: flex;
+  margin: 0 auto 132px;
+  padding: 0 20px;
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 86px;
+  }
+}
+
+.news-heading {
+  margin-right: 60px;
+  @include mobile {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
+.news-article {
+  display: flex;
+  margin-bottom: 15px;
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+}
+
+.news-info {
+  min-width: 200px;
+  @include mobile {
+    margin-bottom: 5px;
+  }
+  &__date {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 18px;
+  }
+  &__icon {
+    display: inline-block;
+    width: 80px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 18px;
+    text-align: center;
+    background-color: #e8e8e8;
+    border-radius: 50px;
+  }
+}
+
+.news-text {
+  font-size: 15px;
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+/* サービス */
+.service {
+  max-width: 1110px;
+  height: auto;
+  margin: 0 auto 140px;
+  padding: 0 20px;
+  text-align: center;
+  @include mobile {
+    margin-bottom: 60px;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+/* ワークス */
+.works {
+  max-width: 1261px;
+  height: auto;
+  margin: 0 auto 60px;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.works-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  padding: 60px 20px;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.works-img {
+  width: 60%;
+  margin-right: 70px;
+  @include mobile {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.works-contents {
+  &::after {
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 60%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    @include mobile {
+      width: 100%;
+      height: 60%;
+      bottom: 0;
+      left: 0;
+      transform: translateY(60%);
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    margin: 30px 0;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+/* カンパニー */
+.company {
+  max-width: 1300px;
+  height: 615px;
+  margin: 0 auto 65px;
+  background-image: url(../img/bg-circle.png), url(../img/bg-face.png);
+  background-repeat: no-repeat;
+  background-position: center center, center center;
+  @include mobile {
+    background-image: url(../img/sp_bg-circle.png);
+    background-size: 375px;
+  }
+}
+
+.company-container {
+  padding: 143px 0 55px;
+  text-align: center;
+  @include mobile {
+    padding-top: 60px;
+  }
+  &__subject {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #f5f534 0%);
+    @include mobile {
+      font-size: 32px;
+      }
+    }
+  &__text {
+    font-size: 15px;
+    margin: 30px 0;
+    @include mobile {
+      font-size: 14px;
+      margin: 40px 0 30px;
+    }
+  }
+}
+
+  /* リクルート */
+  .recruit {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .recruit-container {
+    width: 445px;
+    background-color: #f0f0f0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @include mobile {
+      width: 100%;
+      padding: 65px 0 50px;
+    }
+  }
+
+.recruit-img {
+  @include mobile {
+    height: 140px;
+  }
+}
+
+  .recruit-container__text {
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: block;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  /* コンタクト */
+  .contact {
+    text-align: center;
+    height: 361px;
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    &__text {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 30px;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }

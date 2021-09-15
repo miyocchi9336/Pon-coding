@@ -1,0 +1,81 @@
+.top-title {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 240px;
+  text-align: center;
+  padding-top: 110px;
+  @include mobile {
+    height: 190px;
+    padding-top: 95px;
+  }
+}
+
+.top-guide {
+  height: 45px;
+  background-color: #f7f7f7;
+  padding: 8px 0;
+  margin-bottom: 60px;
+  overflow: hidden;
+
+
+  &__inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 20px;
+
+    span {
+      font-size: 12px;
+      margin-right: 10px;
+      @include mobile {
+        font-size: 11px;
+      }
+
+      &::after {
+        content: '>';
+        margin-left: 10px;
+      }
+      &:last-child::after {
+        content: none;
+      }
+    }
+  }
+}
+
+.news-container {
+  max-width: 914px;
+  height: 851px;
+  margin: 0 auto;
+  padding: 0px 10px 0;
+  @include mobile {
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.news-paging {
+  height: 45px;
+  margin-bottom: 110px;
+  text-align: center;
+  @include mobile {
+    margin-bottom: 80px;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(#7633a4 0%, #250d65 100%);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    margin: 0 5px;
+  }
+  
+  &__btn:first-child {
+    background-image: linear-gradient(#F1EBF8);
+    color: #4F31A5;
+  }
+}

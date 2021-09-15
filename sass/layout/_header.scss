@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  width: 100%;
+  padding: 23px 30px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: #21054D;
+
+  .header__logo {
+    line-height: 1;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-left: 25px;
+
+      a {
+        font-size: 14px;
+        letter-spacing: .1em;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header__gnav {
+  @include mobile {
+    display: none;
+  }
+}
+
+

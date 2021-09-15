@@ -1,0 +1,7 @@
+$sp: 767px;
+
+@mixin mobile {
+  @media screen and (max-width: $sp) {
+    @content;
+  }
+}

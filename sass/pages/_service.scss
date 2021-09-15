@@ -1,0 +1,36 @@
+.service-container {
+  max-width: 1110px;
+  margin: 0 auto 110px;
+  padding: 0 15px;
+  @include mobile {
+    margin-bottom: 80px;
+  }
+}
+
+.service-card {
+  display: flex;
+  height: auto;
+  margin: 0 0 60px;
+  @include mobile {
+    display: block;
+  }
+
+  &__img {
+    flex: 0 0 40%;
+    margin-right: 50px;
+    @include mobile {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  h3 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    @include mobile {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
+
